@@ -1,0 +1,354 @@
+*{
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+	margin: 0;
+	padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* overflow-y: hidden; */
+}
+
+nav{
+    /* padding: 5px 0; */
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 0 7%;
+    z-index: 1000;
+    max-width: 100vw;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 100px;
+    background-color: white;
+    overflow-y: hidden;
+}
+
+nav a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+nav .kanan img{
+    aspect-ratio: 16/9;
+    width: 200px;
+    object-fit: cover;
+}
+
+nav .tengah{
+    display: flex;
+    gap: 24px;
+    padding: 38px 0;
+}
+
+nav .tengah i{
+    font-size: 20px;
+}
+
+nav .tengah .beranda{
+    border-bottom: 2px solid;
+}
+
+nav .kiri{
+    display: flex;
+    padding: 38px 0;
+}
+
+nav .kiri .statistik button{
+    border: 10px solid red;
+    border-radius: 50px;
+    color: black;
+    background-color: red;
+}
+
+.container{
+    padding: 20px 5px;
+}
+
+.pertama{
+    display: flex;
+    justify-content: space-evenly;
+    background: url(ASSET/Landing\ page\ bg.png);
+    height: 100vh;
+}
+
+.pertama::after, .pertama::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+}
+
+.pertama::before{
+    top: 78px;
+    background: url(ASSET/Vector-hero-atas.png) no-repeat top;
+    background-size: 1565px 100px;
+}
+
+.pertama::after{
+    bottom: -20px;
+    background: url(ASSET/Vector-hero-bawah.png) no-repeat bottom;
+    background-size: 1565px 100px;
+}
+
+.pertama .teks-hero{
+    margin: 230px 0 80px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.teks-hero h1{
+    font-size: 64px;
+}
+
+.teks-hero h1 span{
+    border-bottom: 3px solid;
+}
+
+.teks-hero p{
+    /* padding: 20px 0 0 0; */
+    font-size: 18px;
+    text-align: justify;
+}
+
+.img-hero{
+    margin: 160px 0px;
+    overflow-y: hidden;
+}
+
+.img-hero img{
+    height: 420px;
+    width: 420px;
+    margin:10px 0px ;
+    
+}
+
+.statistik-hero{
+    width: 140px;
+    height: 38px;
+    border: 8px solid;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.statistik-hero a{
+    text-decoration: none;
+}
+
+.kedua{
+    /* margin-top: -0px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    background-image: linear-gradient(to bottom, white, #048B9E);
+}
+
+section .kedua{ 
+    height: 170vh;
+}
+
+.kedua .teks{
+    display: flex;
+    justify-content: center;
+}
+.kedua .teks h1{
+    font-size: 32px;
+}
+.iterasi{
+    gap: 8px;
+}
+.iterasi1{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.iterasi2{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.iterasi3{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 3px; /* Menghilangkan padding antar elemen */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+
+.card .overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    border-image: linear-gradient(#0003,#000) 0 50%/0 0%;
+    transition: all .6s;
+    cursor: pointer;
+}
+.card .overlay:hover{
+    border-image-width: 0 50%;
+}
+
+.card:hover .overlay{
+    opacity: 1;
+}
+
+.overlay h1 p{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+section .ketiga{
+    height: 100vh;
+}
+
+.ketiga{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: #048B9E;
+}
+
+.ketiga h1{
+    display: flex;
+    justify-content: center;
+}
+
+.ketiga img{
+    display: flex;
+    margin-left: 250px;
+}
+
+.ketiga p{
+    display: flex;
+    text-align: justify;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+
+section .keempat{
+    height: 100vh;
+}
+
+.keempat{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background: url(ASSET/Landing\ page\ bg.png);
+}
+
+.keempat::before,.keempat::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+}
+
+.keempat::before{
+    bottom: -275vh;
+    background: url(ASSET/Vector-keempat-beranda.png) no-repeat bottom;
+    background-size: 1561px 50px;
+}
+
+.keempat::after{
+    bottom: -350vh;
+    background: url(ASSET/Vector_section4-bawah.png) no-repeat top;
+    background-size: 1561px 50px;
+}
+
+.keempat h1{
+    display: flex;
+    justify-content: center;
+}
+
+.t{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.t1{
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.t1 p{
+    font-size: 20px;
+}
+
+section .kelima{
+    height: 100vh;
+}
+
+.kelima{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+footer{
+    height:20vh;
+    background-color: #000;
+}
+
+/* ----------------------- HALAMAN ABOUT ---------------------------------------- */
+.hero-about{
+    height: 100vh;
+    background-image:url(ASSET/about-hero.png) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+

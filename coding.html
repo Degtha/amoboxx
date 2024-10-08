@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    box-sizing: border-box;
+    overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    padding: 20px 60px;
+}
+
+section{
+    height: 170vh;
+}
+.iterasi{
+    gap: 8px;
+}
+.iterasi1{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.iterasi2{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.iterasi3{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 3px; /* Menghilangkan padding antar elemen */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+
+.card .overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    border-image: linear-gradient(#0003,#000) 0 50%/0 0%;
+    transition: all .6s;
+    cursor: pointer;
+}
+.card .overlay:hover{
+    border-image-width: 0 50%;
+}
+
+.card:hover .overlay{
+    opacity: 1;
+}
+
+.overlay h1 p{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <section class="kedua">
+        <div class="teks">
+            <h1><strong>Komponen Hardware Proyek Kami</strong></h1>
+        </div>
+        <div class="iterasi">
+             <div class="iterasi1">
+                <div class="card">
+                    <img src="ASSET/Frame 26.png" alt="">
+                    <div class="overlay">
+                        <h1>KONTEN</h1>
+                        <p>LOREN IPSUN BLABLABLAA</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <img src="ASSET/Frame 27.png" alt="">
+                    <div class="overlay">
+                        <h1>KONTEN</h1>
+                        <p>LOREN IPSUN BLABLABLAA</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="ASSET/Frame 28.png" alt="">
+                    <div class="overlay">
+                        <h1>KONTEN</h1>
+                        <p>LOREN IPSUN BLABLABLAA</p>
+                    </div>
+                </div>
+            </div>
+            <div class="iterasi2">
+                <div class="card">
+                    <img src="ASSET/Frame 29.png" alt="">
+                    <div class="overlay">
+                        <h1>KONTEN</h1>
+                        <p>LOREN IPSUN BLABLABLAA</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="ASSET/Frame 30.png" alt="">
+                    <div class="overlay">
+                        <h1>KONTEN</h1>
+                        <p>LOREN IPSUN BLABLABLAA</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="ASSET/Frame 31.png" alt="">
+                    <div class="overlay">
+                        <h1>KONTEN</h1>
+                        <p>LOREN IPSUN BLABLABLAA</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="ASSET/Frame 32.png" alt="">
+                    <div class="overlay">
+                        <h1>KONTEN</h1>
+                        <p>LOREN IPSUN BLABLABLAA</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="iterasi3">
+                <div class="card">
+                    <img src="ASSET/Frame 33.png" alt="">
+                    <div class="overlay">
+                        <h1>KONTEN</h1>
+                        <p>LOREN IPSUN BLABLABLAA</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="ASSET/Frame 34.png" alt="">
+                    <div class="overlay">
+                        <h1>KONTEN</h1>
+                        <p>LOREN IPSUN BLABLABLAA</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="ASSET/Frame 35.png" alt="">
+                    <div class="overlay">
+                        <h1>KONTEN</h1>
+                        <p>LOREN IPSUN BLABLABLAA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

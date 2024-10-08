@@ -1,0 +1,386 @@
+<html>
+ <head>
+  <title>
+   Anggota Kelompok A2
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hero-a{
+        height: 20vh;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+
+        .hero {
+            background: url(ASSET/about-hero.png) no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            justify-content: center;
+            padding: 250px 20px;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 18px;
+            margin: 10px 0 0;
+        }
+        .hero::after,.hero::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background-size: cover;
+        }
+        .hero::before {
+            bottom: -50px;
+            background: url(ASSET/hero-tentang-kami.png) no-repeat bottom;
+            background-size: 2000px 80px;
+        }
+        .hero::after {
+            top: -8px;
+            background: url(ASSET/Vector.svg) no-repeat top;
+            background-size: 5000px 100px;
+        }
+
+        #sesi2::after, #sesi2::before{
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background-size: cover;
+        }
+
+        #sesi2::after{
+            top: 215vh;
+            background: url(ASSET/hardware-about.png) no-repeat top;
+            background-size: 2000px 100px;
+        }
+        #sesi2::before{
+            bottom: -247vh;
+            background: url(ASSET/hardware-about-bawah.png) no-repeat bottom;
+            background-size: 2000px 100px;
+        }
+
+        #sesi1{
+            background-color: white;
+        }
+
+        #sesi2{
+            background-color: aqua;
+        }
+
+        #sesi3{
+            background-color: white;
+        }
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            font-size: 28px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .section p {
+            font-size: 16px;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 200px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card p {
+            margin: 10px 0;
+            font-weight: 700;
+        }
+        .footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+  </style>
+ </head>
+ <body>
+    <nav>
+        <div class="kanan">
+            <a href="index.html"><img src="ASSET/amobox landscape logo.png" alt=""></a>
+        </div>
+        
+        <div class="tengah">
+            <div class="beranda">
+                <i class='bx bx-home'></i>
+                <a href="index.html">BERANDA</a>
+            </div>
+            <div class="Konten">
+                <i class='bx bx-bulb' ></i>
+                <a href="">KONTEN</a>
+            </div>
+            <div class="About">
+                <i class='bx bx-user-circle'></i>
+                <a href="blabla.html">TENTANG KAMI</a>
+            </div>
+        </div>
+        
+        <div class="kiri">
+            <div class="statistik">
+                <button><a href="statistik2.html">STATISTIK</a></button>
+            </div>
+        </div>
+    </nav>
+    <div class="hero-a">
+        <h1>ANGGOTA KELOMPOK A2</h1>
+    </div>
+    <div class="hero">
+    <h1>
+        ANGGOTA KELOMPOK A2
+    </h1>
+    <p>
+        Pada proyek P5; BEREKAYASA &amp; BERTEKNOLOGI, terbagi menjadi beberapa divisi
+    </p>
+    </div>
+    <div class="section" id="sesi1">
+    <h2>
+        DIVISI SOFTWARE
+    </h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    <div class="cards">
+        <div class="card">
+            <img alt="Person working on a laptop" src="https://placehold.co/200x150"/>
+            <p> NAMA 1 </p>
+        </div>
+        
+        <div class="card">
+        <img alt="Group of people in a meeting" src="https://placehold.co/200x150"/>
+        <p> NAMA 2 </p>
+        </div>
+        <div class="card">
+        <img alt="Person coding on a computer" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 3
+        </p>
+        </div>
+        <div class="card">
+        <img alt="Person working in an office" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 4
+        </p>
+        </div>
+        <div class="card">
+        <img alt="Person reading a book in a library" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 5
+        </p>
+        </div>
+    </div>
+    </div>
+    <div class="section" id="sesi1">
+    <h2>
+        DIVISI HARDWARE
+    </h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    <div class="cards">
+        <div class="card">
+        <img alt="Person working on hardware" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 1
+        </p>
+        </div>
+        <div class="card">
+        <img alt="Person assembling a device" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 2
+        </p>
+        </div>
+        <div class="card">
+        <img alt="Person testing hardware" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 3
+        </p>
+        </div>
+        <div class="card">
+        <img alt="Person working with circuits" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 4
+        </p>
+        </div>
+    </div>
+    </div>
+    <div class="section" id="sesi2">
+    <h2>
+        DIVISI SARANA &amp; PRASARANA
+    </h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    <div class="cards">
+        <div class="card">
+        <img alt="Person working on a laptop" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 1
+        </p>
+        </div>
+        <div class="card">
+        <img alt="Group of people in a meeting" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 2
+        </p>
+        </div>
+        <div class="card">
+        <img alt="Person coding on a computer" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 3
+        </p>
+        </div>
+        <div class="card">
+        <img alt="Person working in an office" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 4
+        </p>
+        </div>
+        <div class="card">
+        <img alt="Person reading a book in a library" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 5
+        </p>
+        </div>
+    </div>
+    </div>
+    <div class="section" id="sesi2">
+    <h2>
+        DIVISI DOKUMENTASI &amp; EDITING
+    </h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    <div class="cards">
+        <div class="card">
+        <img alt="Person working on a laptop" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 1
+        </p>
+        </div>
+        <div class="card">
+        <img alt="Group of people in a meeting" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 2
+        </p>
+        </div>
+    </div>
+    </div>
+    <div class="section" id="sesi3">
+    <h2>
+        DIVISI KONTEN ARTIKEL
+    </h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    <div class="cards">
+        <div class="card">
+        <img alt="Person working on a laptop" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 1
+        </p>
+        </div>
+        <div class="card">
+        <img alt="Group of people in a meeting" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 2
+        </p>
+        </div>
+        <div class="card">
+        <img alt="Person coding on a computer" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 3
+        </p>
+        </div>
+        <div class="card">
+        <img alt="Person working in an office" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 4
+        </p>
+        </div>
+        <div class="card">
+        <img alt="Person reading a book in a library" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 5
+        </p>
+        </div>
+    </div>
+    </div>
+    <div class="section" id="sesi3">
+    <h2>
+        DIVISI LAPORAN &amp; PRESENTASI
+    </h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+    <div class="cards">
+        <div class="card">
+        <img alt="Person working on a laptop" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 1
+        </p>
+        </div>
+        <div class="card">
+        <img alt="Group of people in a meeting" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 2
+        </p>
+        </div>
+        <div class="card">
+        <img alt="Person coding on a computer" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 3
+        </p>
+        </div>
+        <div class="card">
+        <img alt="Person working in an office" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 4
+        </p>
+        </div>
+        <div class="card">
+        <img alt="Person reading a book in a library" src="https://placehold.co/200x150"/>
+        <p>
+        NAMA 5
+        </p>
+        </div>
+    </div>
+    </div>
+  <div class="footer">
+   © 2023 Anggota Kelompok A2. All rights reserved.
+  </div>
+ </body>
+</html>
